@@ -135,10 +135,9 @@ section {
   display: block;
   width: 60px;
   height: 2px;
-  background-color: var(--accent);
+  background-color: var(--neon-cyan);
   margin: var(--space-3) auto 0;
 }
-
 /* Styles de navbar */
 .navbar {
   padding: var(--space-3) 0;
