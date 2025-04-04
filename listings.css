@@ -69,7 +69,6 @@ body {
   background-color: var(--dark-bg);
 }
 
-
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: var(--bs-font-serif);
@@ -98,7 +97,7 @@ h1, h2, h3, h4, h5, h6,
   padding: var(--bp-space-2) var(--bp-space-3);
   font-weight: 500;
   color: #fff !important;
-  transition: color 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .navbar-nav .nav-link:hover {
@@ -227,6 +226,7 @@ h1, h2, h3, h4, h5, h6,
 
 .form-check {
   margin-bottom: var(--bp-space-1);
+  
 }
 
 /* Price range slider */
@@ -242,9 +242,22 @@ h1, h2, h3, h4, h5, h6,
 
 /* Sort dropdown */
 .sort-dropdown {
+  background-color: var(--dark-accent);
+  color: var(--bp-gray-100); 
+  box-shadow: 0 4px 12px rgba(0, 255, 255, 0.2) !important;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
   width: auto;
   min-width: 200px;
+  border-color: var(--dark-bg);
 }
+.sort-dropdown:focus, .sort-dropdown:hover {
+  outline: none;
+  box-shadow:  0 4px 12px rgba(0, 255, 255, 0.2)!important; 
+  border-color: var(--neon-cyan); 
+}
+
 
 /* Pagination */
 .pagination {
@@ -280,13 +293,14 @@ h1, h2, h3, h4, h5, h6,
   padding: var(--bp-space-2) var(--bp-space-4);
   border-radius: var(--bp-radius-sm);
   font-weight: 600;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
 }
 
 .btn-primary {
-  background: linear-gradient(45deg, var(--neon-cyan), #0af);
+  background: linear-gradient(45deg, #0ff, #0af);
   border: none;
   color: #000;
+  font-weight: bold;
 }
 
 .btn-primary:hover {
@@ -301,7 +315,7 @@ h1, h2, h3, h4, h5, h6,
 
 .btn-outline-primary:hover {
   background-color:var(--neon-cyan);
-  color: white;
+  
 }
 
 .btn-link {
@@ -333,6 +347,7 @@ h1, h2, h3, h4, h5, h6,
   background-color: var(--bp-accent);
   color: var(--dark-bg);
 }
+
 
 /* Footer */
 footer {
@@ -389,7 +404,7 @@ footer a:hover {
   text-align: center;
   line-height: 36px;
   margin-right: var(--bp-space-2);
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .social-icons a:hover {
@@ -433,9 +448,7 @@ footer a:hover {
 .mb-0{
   color: var(--neon-cyan)
 }
-.me-2{
+.me-3{
   color: var(--neon-cyan)
 }
-#sortOrder {
-  box-shadow: 0 0 10px var(--neon-cyan);
-}
+

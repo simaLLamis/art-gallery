@@ -64,22 +64,14 @@ body {
   line-height: 1.6;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
+h1,h2,h4,h5,h6,.h1,.h2,.h4,.h5,.h6 {
   font-family: var(--bs-font-serif);
   font-weight: 700;
   margin-bottom: var(--bp-space-3);
-  color: var(--bp-white);
+  color: var(--bp-gray-100);
+}
+h1,.h1{
+  color:var(--neon-cyan);
 }
 
 /* Navbar Styles */
@@ -138,12 +130,12 @@ h6,
 }
 
 .breadcrumb-item a {
-  color: var(--neon-cyan);
+  color: var(--bp-gray-100);
   text-decoration: none;
 }
 
 .breadcrumb-item.active {
-  color: var(--bp-gray-400);
+  color: var(--neon-cyan);
 }
 
 /* Artwork Detail Styles */
